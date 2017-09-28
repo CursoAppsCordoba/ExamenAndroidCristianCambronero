@@ -75,7 +75,7 @@ public class AltaActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     @Override
-    public void onClick(View view) {
+    public void onClick(View view) {//hola
         switch (view.getId()){
             case R.id.ok:
                 Contacto contacto=new Contacto();
