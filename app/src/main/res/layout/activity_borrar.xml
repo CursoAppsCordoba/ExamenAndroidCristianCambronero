@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.crcama.examenandroidcristiancambronero.BorrarActivity">
+
+    <EditText
+        android:id="@+id/et_contacto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="131dp"
+        android:ems="10"
+        android:hint="Nombre:"
+        android:inputType="textPersonName"
+        android:text="Cristian" />
+
+    <EditText
+        android:id="@+id/et_edad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/et_contacto"
+        android:layout_below="@+id/et_contacto"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:hint="Edad: "
+        android:inputType="textPersonName"
+        android:text="21" />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/et_edad"
+        android:layout_below="@+id/et_edad"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Email: "
+        android:inputType="textPersonName"
+        android:text="crcm96@gmail.com" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="63dp"
+        android:text="Borrar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/colorAccent"
+        android:layout_above="@+id/et_edad"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/borrar"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:text="borrar"
+        android:layout_below="@+id/et_email"
+        android:layout_alignStart="@+id/et_email" />
+
+    <Button
+        android:id="@+id/canceled"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/borrar"
+        android:layout_alignEnd="@+id/et_email"
+        android:layout_alignTop="@+id/borrar"
+        android:text="cancelar" />
+
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.crcama.examenandroidcristiancambronero.AltaActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="66dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Alta"
+        android:textAlignment="textStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold|italic"
+        />
+
+    <EditText
+        android:id="@+id/et_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="146dp"
+        android:ems="10"
+        android:hint="nombre: "
+        android:inputType="textPersonName"
+
+        android:text="Cristian"
+        android:textAlignment="viewStart" />
+
+    <EditText
+        android:id="@+id/et_edad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/et_nombre"
+        android:layout_below="@+id/et_nombre"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="edad: "
+        android:inputType="textPersonName"
+
+        android:text="21" />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/et_edad"
+        android:layout_below="@+id/et_edad"
+        android:layout_marginTop="29dp"
+        android:ems="10"
+        android:hint="email: "
+        android:inputType="textPersonName"
+        android:text="crcm96@gmail.com" />
+
+    <Button
+        android:id="@+id/ok"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/et_email"
+        android:layout_alignTop="@+id/canceled"
+        android:text="ok" />
+
+    <Button
+        android:id="@+id/canceled"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/et_email"
+        android:layout_below="@+id/et_email"
+        android:layout_marginTop="36dp"
+        android:text="canceled" />
+</RelativeLayout>
